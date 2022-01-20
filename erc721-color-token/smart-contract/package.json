@@ -1,0 +1,41 @@
+{
+  "name": "Color-NFT-Smart-Contracts",
+  "version": "1.0.0",
+  "description": "Color ERC-721 Ethereum token and more",
+  "main": "start.js",
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "truffle compile",
+    "test": "mocha --timeout 100000 --exit --recursive test",
+    "deploy": "truffle migrate --network ropsten",
+    "verify": "truffle run verify Implementation --network mainnet"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/test-environment": "^0.1.9",
+    "fs": "0.0.1-security",
+    "ganache-core": "^2.13.2",
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "ganache-cli": "^6.10.2",
+    "prettier": "^2.1.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.57",
+    "solidity-coverage": "^0.7.16",
+    "truffle": "^5.3.13",
+    "truffle-flattener": "^1.5.0",
+    "truffle-typings": "^1.0.8",
+    "mocha": "^7.0.0",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0"
+  }
+}
